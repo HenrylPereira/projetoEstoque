@@ -20,6 +20,7 @@ public class Produto {
     private int quantidade;
     private int quantidadeMax;
     private int quantidadeMin;
+    
     public Long getId() {
         return id;
     }
