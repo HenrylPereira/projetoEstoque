@@ -14,7 +14,7 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String titulo;
-    private Categoria categoria;
+    //private Categoria categoria;
     private Double valor;
     private Date dataEntrada;
     private int quantidade;
@@ -33,12 +33,13 @@ public class Produto {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-    public Categoria getCategoria() {
+    /*public Categoria getCategoria() {
         return categoria;
     }
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
+    */
     public Double getValor() {
         return valor;
     }
