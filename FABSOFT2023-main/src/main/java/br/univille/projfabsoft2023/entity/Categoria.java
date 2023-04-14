@@ -1,7 +1,6 @@
 package br.univille.projfabsoft2023.entity;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity()
 public class Categoria {
@@ -14,15 +13,36 @@ public class Categoria {
 
     private String descricao;
 
-    private String password;
-
-    public Categoria(String titulo, String descricao, String password) {
+    public Categoria(String titulo, String descricao) {
         this.titulo = titulo;
         this.descricao = descricao;
-        this.password = password;
     }
 
     public Categoria() {
 
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
