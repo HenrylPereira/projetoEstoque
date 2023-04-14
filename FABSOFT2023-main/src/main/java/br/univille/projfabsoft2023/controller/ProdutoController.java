@@ -9,8 +9,4 @@ import br.univille.projfabsoft2023.repository.ProdutoRepository;
 @RestController
 @RequestMapping("/produto")
 public class ProdutoController {
-
-    @Autowired
-    private ProdutoRepository produtoRepository;
-
 }
